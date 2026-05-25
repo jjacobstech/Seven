@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle2, ChevronLeft, ChevronRight } from "lucide-reac
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full bg-[#040B18]">
+    <div className="flex flex-col w-full bg-[#000117]">
       {/* ═══════════════════════════════════════════════════
           HERO SECTION
       ═══════════════════════════════════════════════════ */}
@@ -16,7 +16,13 @@ export default function Home() {
         <div className="relative z-10 max-w-5xl w-full text-center flex flex-col items-center">
           {/* Tag */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-yellow-400/30 bg-yellow-400/5 text-yellow-400 text-xs font-bold mb-8">
-            <Image src="/assets/Vector.png" alt="" width={12} height={12} className="w-3 h-3" />
+            <Image
+              src="/assets/bulb-icon.svg"
+              alt=""
+              width={12}
+              height={12}
+              className="w-3 h-3"
+            />
             Your Creation Partner
           </div>
 
@@ -28,7 +34,10 @@ export default function Home() {
           </p>
 
           {/* Main Headline */}
-          <h1 className="text-[clamp(5rem,15vw,10rem)] font-black text-white mb-10 tracking-tighter leading-none">
+          <h1
+            className="text-[clamp(5rem,15vw,10rem)] font-black text-white mb-10 tracking-tighter leading-none"
+            style={{ fontFamily: "var(--font-display)" }}
+          >
             Stand Out
           </h1>
 
@@ -53,14 +62,19 @@ export default function Home() {
             {/* Floating card */}
             <div className="absolute top-8 left-0 p-5 bg-black/50 backdrop-blur-md rounded-2xl border border-white/10 max-w-[260px] text-left hidden md:block z-20">
               <p className="text-xs text-white/70 leading-relaxed italic font-serif">
-                Book a <span className="text-yellow-400 font-bold not-italic">FREE</span> 30-minute
-                consultation call and unlock everything you need to make your brand{" "}
+                Book a{" "}
+                <span className="text-yellow-400 font-bold not-italic">
+                  FREE
+                </span>{" "}
+                30-minute consultation call and unlock everything you need to
+                make your brand{" "}
                 <span className="text-yellow-400 font-bold">shine</span>.
               </p>
             </div>
             <Image
               src="/assets/lightbulbs-hero.png"
               alt="Glowing lightbulb — Seven Innovative creative agency"
+              f
               width={1000}
               height={800}
               className="object-contain drop-shadow-[0_0_60px_rgba(250,204,21,0.25)] w-full"
@@ -73,7 +87,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════════════════
           WHO ARE WE
       ═══════════════════════════════════════════════════ */}
-      <section id="about" className="py-28 px-6 bg-[#040B18]">
+      <section id="about" className="py-28 px-6 bg-[#000117]">
         <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-20 items-start">
           {/* Left: Text */}
           <div className="flex-1">
@@ -82,17 +96,19 @@ export default function Home() {
             </h2>
             <div className="space-y-5 text-white/50 text-base leading-relaxed max-w-lg">
               <p>
-                Our team consists of design experts, developers, marketers, photographers,
-                filmmakers, and copywriters.
+                Our team consists of design experts, developers, marketers,
+                photographers, filmmakers, and copywriters.
               </p>
               <p>
-                What we do is help you tell your brand story in a way that is not just unique but
-                compelling.
+                What we do is help you tell your brand story in a way that is
+                not just unique but compelling.
               </p>
               <p>
-                If you&apos;re looking to tell your brand story in a way that makes people stop and
-                listen,{" "}
-                <span className="text-white font-bold italic">we&apos;re your guys!</span>
+                If you&apos;re looking to tell your brand story in a way that
+                makes people stop and listen,{" "}
+                <span className="text-white font-bold italic">
+                  we&apos;re your guys!
+                </span>
               </p>
             </div>
 
@@ -107,9 +123,15 @@ export default function Home() {
 
             {/* Decorative watermark text */}
             <div className="mt-16 select-none pointer-events-none opacity-[0.04]">
-              <span className="text-7xl font-black uppercase block leading-none">Your</span>
-              <span className="text-7xl font-black uppercase block leading-none">Creative</span>
-              <span className="text-7xl font-black uppercase block leading-none">Partner</span>
+              <span className="text-7xl font-black uppercase block leading-none">
+                Your
+              </span>
+              <span className="text-7xl font-black uppercase block leading-none">
+                Creative
+              </span>
+              <span className="text-7xl font-black uppercase block leading-none">
+                Partner
+              </span>
             </div>
           </div>
 
@@ -118,39 +140,66 @@ export default function Home() {
             {/* Creative */}
             <div className="group p-7 rounded-2xl bg-[#0A1628] border border-white/5 hover:border-yellow-400/20 transition-all flex gap-5 items-start">
               <div className="w-11 h-11 rounded-xl bg-yellow-400/10 flex items-center justify-center shrink-0 group-hover:bg-yellow-400 transition-all">
-                <Image src="/assets/solar_layers-bold.svg" alt="Creative" width={22} height={22} className="w-5 h-5 invert group-hover:invert-0 opacity-80" />
+                <Image
+                  src="/assets/solar_layers-bold.svg"
+                  alt="Creative"
+                  width={22}
+                  height={22}
+                  className="w-5 h-5 invert group-hover:invert-0 opacity-80"
+                />
               </div>
               <div>
-                <h3 className="text-white font-bold text-lg mb-2">Creative<span className="text-yellow-400">.</span></h3>
+                <h3 className="text-white font-bold text-lg mb-2">
+                  Creative<span className="text-yellow-400">.</span>
+                </h3>
                 <p className="text-white/40 text-sm leading-relaxed">
-                  We are a creative setup that sets out to solve the problem of information and
-                  communication with innovative ideas and well-structured creative strategies.
+                  We are a creative setup that sets out to solve the problem of
+                  information and communication with innovative ideas and
+                  well-structured creative strategies.
                 </p>
               </div>
             </div>
             {/* Strategic */}
             <div className="group p-7 rounded-2xl bg-[#0A1628] border border-white/5 hover:border-yellow-400/20 transition-all flex gap-5 items-start">
               <div className="w-11 h-11 rounded-xl bg-yellow-400/10 flex items-center justify-center shrink-0 group-hover:bg-yellow-400 transition-all">
-                <Image src="/assets/Vector(1).svg" alt="Strategic" width={22} height={22} className="w-5 h-5 invert group-hover:invert-0 opacity-80" />
+                <Image
+                  src="/assets/Vector(1).svg"
+                  alt="Strategic"
+                  width={22}
+                  height={22}
+                  className="w-5 h-5 invert group-hover:invert-0 opacity-80"
+                />
               </div>
               <div>
-                <h3 className="text-white font-bold text-lg mb-2">Strategic<span className="text-yellow-400">.</span></h3>
+                <h3 className="text-white font-bold text-lg mb-2">
+                  Strategic<span className="text-yellow-400">.</span>
+                </h3>
                 <p className="text-white/40 text-sm leading-relaxed">
-                  We offer outside the box solutions to every creative problem your business is
-                  struggling with. No cliche or ordinary around here.
+                  We offer outside the box solutions to every creative problem
+                  your business is struggling with. No cliche or ordinary around
+                  here.
                 </p>
               </div>
             </div>
             {/* Fast */}
             <div className="group p-7 rounded-2xl bg-[#0A1628] border border-white/5 hover:border-yellow-400/20 transition-all flex gap-5 items-start">
               <div className="w-11 h-11 rounded-xl bg-yellow-400/10 flex items-center justify-center shrink-0 group-hover:bg-yellow-400 transition-all">
-                <Image src="/assets/Vector(2).svg" alt="Fast" width={22} height={22} className="w-5 h-5 invert group-hover:invert-0 opacity-80" />
+                <Image
+                  src="/assets/Vector(2).svg"
+                  alt="Fast"
+                  width={22}
+                  height={22}
+                  className="w-5 h-5 invert group-hover:invert-0 opacity-80"
+                />
               </div>
               <div>
-                <h3 className="text-white font-bold text-lg mb-2">Fast<span className="text-yellow-400">.</span></h3>
+                <h3 className="text-white font-bold text-lg mb-2">
+                  Fast<span className="text-yellow-400">.</span>
+                </h3>
                 <p className="text-white/40 text-sm leading-relaxed">
-                  We understand that there is getting a job done and there is getting a job done on
-                  time, we are dedicated to delivering excellence with speed.
+                  We understand that there is getting a job done and there is
+                  getting a job done on time, we are dedicated to delivering
+                  excellence with speed.
                 </p>
               </div>
             </div>
@@ -164,7 +213,9 @@ export default function Home() {
       <section id="services" className="py-28 px-6 relative overflow-hidden">
         {/* "Experience Perfection" watermark matching the design */}
         <div className="absolute right-0 bottom-16 select-none pointer-events-none opacity-[0.06] text-right leading-none">
-          <p className="text-[clamp(3rem,8vw,7rem)] font-black uppercase italic font-serif">Experience</p>
+          <p className="text-[clamp(3rem,8vw,7rem)] font-black uppercase italic font-serif">
+            Experience
+          </p>
           <p className="text-[clamp(3rem,8vw,7rem)] font-black uppercase italic font-serif flex items-center justify-end gap-4">
             <span className="text-yellow-400">✓</span>Perfection
           </p>
@@ -184,14 +235,35 @@ export default function Home() {
             {/* Brand Management */}
             <div className="group p-7 rounded-2xl bg-[#0A1628] border border-white/5 hover:border-yellow-400/20 transition-all flex flex-col">
               <div className="w-11 h-11 rounded-xl bg-yellow-400/10 flex items-center justify-center mb-5 group-hover:bg-yellow-400 transition-all">
-                <Image src="/assets/Vector.svg" alt="Brand Management" width={22} height={22} className="w-5 h-5 invert group-hover:invert-0 opacity-80" />
+                <Image
+                  src="/assets/Vector.svg"
+                  alt="Brand Management"
+                  width={22}
+                  height={22}
+                  className="w-5 h-5 invert group-hover:invert-0 opacity-80"
+                />
               </div>
-              <h3 className="text-white font-bold text-base mb-2">Brand Management<span className="text-yellow-400">.</span></h3>
-              <p className="text-white/40 text-xs mb-5 leading-relaxed">Turn your vision into something tangible.</p>
+              <h3 className="text-white font-bold text-base mb-2">
+                Brand Management<span className="text-yellow-400">.</span>
+              </h3>
+              <p className="text-white/40 text-xs mb-5 leading-relaxed">
+                Turn your vision into something tangible.
+              </p>
               <ul className="space-y-2 flex-1">
-                {["Logo & Branding", "Graphics Designs", "UI/UX Design", "Product Branding", "Web Design", "Brand Strategy"].map((p) => (
-                  <li key={p} className="flex items-center gap-2 text-[11px] text-white/40 group-hover:text-white/60 transition-colors">
-                    <div className="w-1 h-1 rounded-full bg-yellow-400 shrink-0" />{p}
+                {[
+                  "Logo & Branding",
+                  "Graphics Designs",
+                  "UI/UX Design",
+                  "Product Branding",
+                  "Web Design",
+                  "Brand Strategy",
+                ].map((p) => (
+                  <li
+                    key={p}
+                    className="flex items-center gap-2 text-[11px] text-white/40 group-hover:text-white/60 transition-colors"
+                  >
+                    <div className="w-1 h-1 rounded-full bg-yellow-400 shrink-0" />
+                    {p}
                   </li>
                 ))}
               </ul>
@@ -200,14 +272,35 @@ export default function Home() {
             {/* Public Relations */}
             <div className="group p-7 rounded-2xl bg-[#0A1628] border border-white/5 hover:border-yellow-400/20 transition-all flex flex-col">
               <div className="w-11 h-11 rounded-xl bg-yellow-400/10 flex items-center justify-center mb-5 group-hover:bg-yellow-400 transition-all">
-                <Image src="/assets/mdi_loudspeaker.svg" alt="Public Relations" width={22} height={22} className="w-5 h-5 invert group-hover:invert-0 opacity-80" />
+                <Image
+                  src="/assets/mdi_loudspeaker.svg"
+                  alt="Public Relations"
+                  width={22}
+                  height={22}
+                  className="w-5 h-5 invert group-hover:invert-0 opacity-80"
+                />
               </div>
-              <h3 className="text-white font-bold text-base mb-2">Public Relations<span className="text-yellow-400">.</span></h3>
-              <p className="text-white/40 text-xs mb-5 leading-relaxed">Let us help your business thrive.</p>
+              <h3 className="text-white font-bold text-base mb-2">
+                Public Relations<span className="text-yellow-400">.</span>
+              </h3>
+              <p className="text-white/40 text-xs mb-5 leading-relaxed">
+                Let us help your business thrive.
+              </p>
               <ul className="space-y-2 flex-1">
-                {["Social Media Marketing", "Campaign Management", "Content Creation and Marketing", "Email Marketing", "Digital Ads", "Content Writing"].map((p) => (
-                  <li key={p} className="flex items-center gap-2 text-[11px] text-white/40 group-hover:text-white/60 transition-colors">
-                    <div className="w-1 h-1 rounded-full bg-yellow-400 shrink-0" />{p}
+                {[
+                  "Social Media Marketing",
+                  "Campaign Management",
+                  "Content Creation and Marketing",
+                  "Email Marketing",
+                  "Digital Ads",
+                  "Content Writing",
+                ].map((p) => (
+                  <li
+                    key={p}
+                    className="flex items-center gap-2 text-[11px] text-white/40 group-hover:text-white/60 transition-colors"
+                  >
+                    <div className="w-1 h-1 rounded-full bg-yellow-400 shrink-0" />
+                    {p}
                   </li>
                 ))}
               </ul>
@@ -216,14 +309,34 @@ export default function Home() {
             {/* Media */}
             <div className="group p-7 rounded-2xl bg-[#0A1628] border border-white/5 hover:border-yellow-400/20 transition-all flex flex-col">
               <div className="w-11 h-11 rounded-xl bg-yellow-400/10 flex items-center justify-center mb-5 group-hover:bg-yellow-400 transition-all">
-                <Image src="/assets/Vector(3).svg" alt="Media" width={22} height={22} className="w-5 h-5 invert group-hover:invert-0 opacity-80" />
+                <Image
+                  src="/assets/Vector(3).svg"
+                  alt="Media"
+                  width={22}
+                  height={22}
+                  className="w-5 h-5 invert group-hover:invert-0 opacity-80"
+                />
               </div>
-              <h3 className="text-white font-bold text-base mb-2">Media<span className="text-yellow-400">.</span></h3>
-              <p className="text-white/40 text-xs mb-5 leading-relaxed">Allow us to present your brand in a way that hooks.</p>
+              <h3 className="text-white font-bold text-base mb-2">
+                Media<span className="text-yellow-400">.</span>
+              </h3>
+              <p className="text-white/40 text-xs mb-5 leading-relaxed">
+                Allow us to present your brand in a way that hooks.
+              </p>
               <ul className="space-y-2 flex-1">
-                {["Cinematography", "Photography", "Stage Light Production", "Video Editing", "Events"].map((p) => (
-                  <li key={p} className="flex items-center gap-2 text-[11px] text-white/40 group-hover:text-white/60 transition-colors">
-                    <div className="w-1 h-1 rounded-full bg-yellow-400 shrink-0" />{p}
+                {[
+                  "Cinematography",
+                  "Photography",
+                  "Stage Light Production",
+                  "Video Editing",
+                  "Events",
+                ].map((p) => (
+                  <li
+                    key={p}
+                    className="flex items-center gap-2 text-[11px] text-white/40 group-hover:text-white/60 transition-colors"
+                  >
+                    <div className="w-1 h-1 rounded-full bg-yellow-400 shrink-0" />
+                    {p}
                   </li>
                 ))}
               </ul>
@@ -232,14 +345,36 @@ export default function Home() {
             {/* Print */}
             <div className="group p-7 rounded-2xl bg-[#0A1628] border border-white/5 hover:border-yellow-400/20 transition-all flex flex-col">
               <div className="w-11 h-11 rounded-xl bg-yellow-400/10 flex items-center justify-center mb-5 group-hover:bg-yellow-400 transition-all">
-                <Image src="/assets/mdi_printer.svg" alt="Print" width={22} height={22} className="w-5 h-5 invert group-hover:invert-0 opacity-80" />
+                <Image
+                  src="/assets/mdi_printer.svg"
+                  alt="Print"
+                  width={22}
+                  height={22}
+                  className="w-5 h-5 invert group-hover:invert-0 opacity-80"
+                />
               </div>
-              <h3 className="text-white font-bold text-base mb-2">Print<span className="text-yellow-400">.</span></h3>
-              <p className="text-white/40 text-xs mb-5 leading-relaxed">Book a free 30 minute consultation.</p>
+              <h3 className="text-white font-bold text-base mb-2">
+                Print<span className="text-yellow-400">.</span>
+              </h3>
+              <p className="text-white/40 text-xs mb-5 leading-relaxed">
+                Book a free 30 minute consultation.
+              </p>
               <ul className="space-y-2 flex-1">
-                {["Book Publishing", "Magazines", "Brochures", "Packaging", "Cloth Branding", "Banners and Stickers", "Signage"].map((p) => (
-                  <li key={p} className="flex items-center gap-2 text-[11px] text-white/40 group-hover:text-white/60 transition-colors">
-                    <div className="w-1 h-1 rounded-full bg-yellow-400 shrink-0" />{p}
+                {[
+                  "Book Publishing",
+                  "Magazines",
+                  "Brochures",
+                  "Packaging",
+                  "Cloth Branding",
+                  "Banners and Stickers",
+                  "Signage",
+                ].map((p) => (
+                  <li
+                    key={p}
+                    className="flex items-center gap-2 text-[11px] text-white/40 group-hover:text-white/60 transition-colors"
+                  >
+                    <div className="w-1 h-1 rounded-full bg-yellow-400 shrink-0" />
+                    {p}
                   </li>
                 ))}
               </ul>
@@ -249,8 +384,11 @@ export default function Home() {
           {/* Bottom CTA row in services */}
           <div className="mt-10 flex flex-col md:flex-row items-center justify-between gap-6">
             <p className="text-white/40 text-sm max-w-lg leading-relaxed">
-              Turn your vision into something tangible and help you discover amazing things to bring
-              your <span className="text-white font-bold italic">brand to its ideal audience.</span>{" "}
+              Turn your vision into something tangible and help you discover
+              amazing things to bring your{" "}
+              <span className="text-white font-bold italic">
+                brand to its ideal audience.
+              </span>{" "}
               Find out how we can make you{" "}
               <span className="text-yellow-400 font-bold">stand out</span>.
             </p>
@@ -267,7 +405,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════════════════
           WHY CHOOSE US
       ═══════════════════════════════════════════════════ */}
-      <section className="py-28 px-6 bg-[#040B18]">
+      <section className="py-28 px-6 bg-[#000117]">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-5xl font-black text-white mb-16 tracking-tight">
             Why <span className="text-yellow-400">Choose</span> Us?
@@ -302,8 +440,12 @@ export default function Home() {
                 <span className="text-5xl font-black text-yellow-400 block mb-5 font-serif">
                   {item.num}
                 </span>
-                <h3 className="text-xl font-bold text-white mb-3">{item.title}</h3>
-                <p className="text-white/40 leading-relaxed text-sm">{item.desc}</p>
+                <h3 className="text-xl font-bold text-white mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-white/40 leading-relaxed text-sm">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -318,12 +460,14 @@ export default function Home() {
           <span className="text-yellow-400 text-xs font-bold uppercase tracking-[0.2em] mb-3 block">
             How we do it
           </span>
-          <h2 className="text-5xl font-black text-white tracking-tight mb-6">Our Process</h2>
+          <h2 className="text-5xl font-black text-white tracking-tight mb-6">
+            Our Process
+          </h2>
           <p className="text-white/40 max-w-xl mx-auto text-sm leading-relaxed">
-            In Seven Innovative, we do not just focus on getting a perfect result, we are also very
-            invested in the{" "}
-            <span className="text-white font-bold">process and experience</span> while getting your
-            work done.
+            In Seven Innovative, we do not just focus on getting a perfect
+            result, we are also very invested in the{" "}
+            <span className="text-white font-bold">process and experience</span>{" "}
+            while getting your work done.
           </p>
         </div>
 
@@ -352,8 +496,12 @@ export default function Home() {
               <div
                 className={`flex-1 pb-10 ${idx < 2 ? "border-b border-white/5" : ""}`}
               >
-                <h3 className="text-lg font-bold text-white mb-3">{item.title}</h3>
-                <p className="text-white/40 leading-relaxed text-sm">{item.desc}</p>
+                <h3 className="text-lg font-bold text-white mb-3">
+                  {item.title}
+                </h3>
+                <p className="text-white/40 leading-relaxed text-sm">
+                  {item.desc}
+                </p>
               </div>
             </div>
           ))}
@@ -372,7 +520,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════════════════
           PORTFOLIO
       ═══════════════════════════════════════════════════ */}
-      <section id="portfolio" className="py-28 px-6 bg-[#040B18]">
+      <section id="portfolio" className="py-28 px-6 bg-[#000117]">
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-end mb-14">
             <h2 className="text-5xl md:text-6xl font-black text-white tracking-tight">
@@ -434,37 +582,63 @@ export default function Home() {
           <span className="text-yellow-400 text-xs font-bold uppercase tracking-[0.2em] mb-3 block">
             What our clients says
           </span>
-          <h2 className="text-5xl font-black text-white tracking-tight mb-14">Client Stories</h2>
+          <h2 className="text-5xl font-black text-white tracking-tight mb-14">
+            Client Stories
+          </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
             {[
-              { img: "/assets/Rectangle 6346.png", name: "Clarissa Balogun", role: "College Student" },
-              { img: "/assets/Rectangle 6348.png", name: "Clarissa Balogun", role: "College Student" },
+              {
+                img: "/assets/Rectangle 6346.png",
+                name: "Clarissa Balogun",
+                role: "College Student",
+              },
+              {
+                img: "/assets/Rectangle 6348.png",
+                name: "Clarissa Balogun",
+                role: "College Student",
+              },
             ].map((t, i) => (
-              <div key={i} className="p-10 rounded-[2.5rem] bg-white text-black relative overflow-hidden">
+              <div
+                key={i}
+                className="p-10 rounded-[2.5rem] bg-white text-black relative overflow-hidden"
+              >
                 {/* Quote badge */}
                 <div className="absolute top-5 right-8 w-14 h-14 bg-blue-700 rounded-2xl flex items-center justify-center">
-                  <span className="text-5xl font-black leading-none font-serif text-white opacity-40">"</span>
+                  <span className="text-5xl font-black leading-none font-serif text-white opacity-40">
+                    "
+                  </span>
                 </div>
                 {/* Stars */}
                 <div className="flex gap-1 mb-7">
                   {[1, 2, 3, 4, 5].map((s) => (
-                    <span key={s} className="text-yellow-400 text-xl">★</span>
+                    <span key={s} className="text-yellow-400 text-xl">
+                      ★
+                    </span>
                   ))}
                 </div>
                 <p className="text-sm leading-relaxed mb-8 text-zinc-500">
-                  Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et
-                  velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora
-                  torquent per conubia nostra, per inceptos himenaeos. Curabitur tempus umodo
+                  Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                  Class aptent taciti sociosqu ad litora torquent per conubia
+                  nostra, per inceptos himenaeos. Curabitur tempus umodo
                   efficitur neque.
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-14 h-14 rounded-2xl overflow-hidden shrink-0 bg-zinc-100">
-                    <Image src={t.img} alt={t.name} width={56} height={56} className="w-full h-full object-cover" />
+                    <Image
+                      src={t.img}
+                      alt={t.name}
+                      width={56}
+                      height={56}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div>
                     <h4 className="font-black text-sm">{t.name}</h4>
-                    <p className="text-[11px] uppercase font-bold text-zinc-400">{t.role}</p>
+                    <p className="text-[11px] uppercase font-bold text-zinc-400">
+                      {t.role}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -476,7 +650,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════════════════
           PRICING PLANS
       ═══════════════════════════════════════════════════ */}
-      <section id="plans" className="py-28 px-6 bg-[#040B18]">
+      <section id="plans" className="py-28 px-6 bg-[#000117]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
             <span className="text-yellow-400 text-xs font-bold uppercase tracking-[0.2em] mb-3 block">
@@ -489,10 +663,30 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {[
-              { title: "Basic", desc: "Essential Branding & Design", featured: false, efficient: false },
-              { title: "Standard", desc: "Comprehensive Branding & Strategy", featured: true, efficient: false },
-              { title: "Premium", desc: "Brand + Website + Social", featured: false, efficient: false },
-              { title: "Executive", desc: "High-End & Scalable", featured: false, efficient: true },
+              {
+                title: "Basic",
+                desc: "Essential Branding & Design",
+                featured: false,
+                efficient: false,
+              },
+              {
+                title: "Standard",
+                desc: "Comprehensive Branding & Strategy",
+                featured: true,
+                efficient: false,
+              },
+              {
+                title: "Premium",
+                desc: "Brand + Website + Social",
+                featured: false,
+                efficient: false,
+              },
+              {
+                title: "Executive",
+                desc: "High-End & Scalable",
+                featured: false,
+                efficient: true,
+              },
             ].map((plan) => (
               <div
                 key={plan.title}
@@ -511,14 +705,22 @@ export default function Home() {
                   </span>
                 )}
 
-                <h3 className="text-2xl font-black mb-1.5 text-white">{plan.title}</h3>
+                <h3 className="text-2xl font-black mb-1.5 text-white">
+                  {plan.title}
+                </h3>
                 <p className="text-white/30 text-xs mb-8">{plan.desc}</p>
 
                 <ul className="flex-1 space-y-3 mb-10">
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <li key={i} className="flex items-start gap-2 text-[11px] text-white/40 leading-snug">
+                    <li
+                      key={i}
+                      className="flex items-start gap-2 text-[11px] text-white/40 leading-snug"
+                    >
                       <CheckCircle2 className="w-3.5 h-3.5 text-yellow-400 shrink-0 mt-0.5" />
-                      <span>Everything in the {plan.title} Package plus advanced benefits.</span>
+                      <span>
+                        Everything in the {plan.title} Package plus advanced
+                        benefits.
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -555,8 +757,8 @@ export default function Home() {
             <span className="text-yellow-400">Stand Out</span>
           </h2>
           <p className="relative z-10 text-white/50 mb-12 text-base max-w-md mx-auto leading-relaxed">
-            Book a free strategy call and discover exactly how we&apos;ll help your brand grow,
-            connect, and convert.
+            Book a free strategy call and discover exactly how we&apos;ll help
+            your brand grow, connect, and convert.
           </p>
           <Link
             href="/book-a-call"

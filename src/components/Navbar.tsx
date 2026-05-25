@@ -29,25 +29,25 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 py-4 ${
         isScrolled
-          ? "bg-[#040B18]/80 backdrop-blur-md border-b border-white/10 py-3"
+          ? "bg-[#000117]/80 backdrop-blur-md border-b border-white/10 py-3"
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/assets/Seven 1 1.png"
-            alt="Seven Innovative"
-            width={120}
-            height={40}
-            className="h-10 w-auto object-contain"
-            priority
-          />
-        </Link>
-
+      <div className="max-w-7xl mx-auto flex items-center justify-center">
         {/* Desktop Links — centered pill */}
         <div className="hidden md:flex items-center gap-8 bg-white/5 backdrop-blur-sm border border-white/10 px-8 py-2.5 rounded-full">
+          {/* Logo */}
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/assets/Seven 1 1.png"
+              alt="Seven Innovative"
+              width={120}
+              height={40}
+              className="h-10 w-auto object-contain"
+              priority
+            />
+          </Link>
+
           {navLinks.map((link) => (
             <Link
               key={link.name}
@@ -57,17 +57,16 @@ const Navbar = () => {
               {link.name}
             </Link>
           ))}
-        </div>
-
-        {/* Action Button */}
-        <div className="hidden md:block">
-          <Link
-            href="/book-a-call"
-            className="group flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black px-5 py-2.5 rounded-lg font-bold text-sm transition-all"
-          >
-            Get Started
-            <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-          </Link>
+          {/* Action Button */}
+          <div className="hidden md:block">
+            <Link
+              href="/book-a-call"
+              className="group flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black px-5 py-2.5 rounded-lg font-bold text-sm transition-all"
+            >
+              Get Started
+              <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+            </Link>
+          </div>
         </div>
 
         {/* Mobile Menu Toggle */}
