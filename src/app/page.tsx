@@ -74,7 +74,6 @@ export default function Home() {
             <Image
               src="/assets/lightbulbs-hero.png"
               alt="Glowing lightbulb — Seven Innovative creative agency"
-              f
               width={1000}
               height={800}
               className="object-contain drop-shadow-[0_0_60px_rgba(250,204,21,0.25)] w-full"
