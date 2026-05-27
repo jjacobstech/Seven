@@ -1,0 +1,1 @@
+import{t as e}from"./app-CqOTZB58.js";var t=e();function n(e){return(0,t.jsx)(`img`,{...e,src:`/assets/logo2.png`,alt:`Seven Innovative Logo`})}export{n as t};
